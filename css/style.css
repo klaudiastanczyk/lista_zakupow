@@ -1,0 +1,38 @@
+h1 {
+  border: 8px solid green;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 100px auto;
+}
+.container .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .main .categories {
+  border: 8px solid green;
+  flex-basis: 20%;
+}
+.container .main .products {
+  border: 8px solid green;
+  flex-basis: 50%;
+}
+.container .main .products .article {
+  display: none;
+}
+.container .main .products .active {
+  display: block;
+}
+.container .main .cart {
+  border: 8px solid green;
+  flex-basis: 30%;
+}
+
+li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHVCQUFBO0VBQ0Esa0JBQUE7QUNDRjs7QURFQTtFQUNFLGlCQUFBO0VBQ0Esa0JBQUE7QUNDRjtBRENFO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7QUNDSjtBRENJO0VBQ0UsdUJBQUE7RUFDQSxlQUFBO0FDQ047QURFSTtFQUNFLHVCQUFBO0VBQ0EsZUFBQTtBQ0FOO0FERU07RUFDRSxhQUFBO0FDQVI7QURHTTtFQUNFLGNBQUE7QUNEUjtBREtJO0VBQ0UsdUJBQUE7RUFDQSxlQUFBO0FDSE47O0FEVUE7RUFDRSxnQkFBQTtBQ1BGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

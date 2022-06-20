@@ -1,0 +1,44 @@
+h1 {
+  border: 8px solid green;
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 100px auto;
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .categories {
+      border: 8px solid green;
+      flex-basis: 20%;
+    }
+
+    .products {
+      border: 8px solid green;
+      flex-basis: 50%;
+
+      .article {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+    }
+
+    .cart {
+      border: 8px solid green;
+      flex-basis: 30%;
+    }
+
+  }
+
+}
+
+li {
+  list-style: none;
+}
