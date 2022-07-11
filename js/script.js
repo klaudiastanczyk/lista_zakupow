@@ -63,7 +63,7 @@ function render(){
   const cart = document.querySelector('.cart');
   let HTML = '';
   for(let productInCart of productsInCart){
-    const generated = `<div>${productInCart.name} ${productInCart.value} <i class="fa-solid fa-trash"></i></div>`;
+    const generated = `<div>${productInCart.name} ${productInCart.value} <i class="fa-regular fa-trash-can"></i></div>`;
     HTML = HTML + generated;
   }
   cart.innerHTML = HTML;
