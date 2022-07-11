@@ -9,7 +9,6 @@ h1 {
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
   Font-Size: 60px;
-  color: #523A23;
 }
 
 .container {
@@ -61,7 +60,10 @@ h1 {
     }
 
     .cart {
+      font-family: 'Josefin Sans', sans-serif;
       flex-basis: 40%;
+      Font-Size: 28px;
+      margin-left: 25px;
     }
 
   }
@@ -70,6 +72,36 @@ h1 {
 
 li {
   list-style: none;
-  Font-Family: 'Catamaran', Sans-Serif;
-  Font-Size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  Font-Size: 28px;
+  line-height: 35px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(28, 148, 28);
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  i {
+    float: right;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+
+  i:hover {
+    color:rgb(28, 148, 28);
+  }
+
+  input {
+    width: 60px;
+    text-align: center;
+    float: right;
+    margin-right: 25px;
+  }
+
 }
