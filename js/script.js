@@ -3,6 +3,7 @@ const inputs = document.querySelectorAll('input');
 const cartIcons = document.querySelectorAll('.cart-icon');
 const productsInCart = [];
 
+
 function categoriesAddListener(){
   for(let link of links){
     link.addEventListener('click', linkClickHandler);
@@ -57,13 +58,35 @@ function addToCart(event){
   newProduct.name = cartName;
   productsInCart.push(newProduct);
   render();
+  canIconListener();
+}
+
+function canIconListener(){
+  const canIcons = document.querySelectorAll('.can-icon');
+  for(let canIcon of canIcons){
+    canIcon.addEventListener('click', removeFromCan);
+  }
+}
+
+function removeFromCan(event){
+  const clickedElement = event.target;
+  const cartElement = clickedElement.closest('div');
+  const textCartElem = cartElement.textContent;
+  const cos = textCartElem.split(' ');
+  const cos2 = {};
+  cos2.value = cos[1];
+  cos2.name = cos[0];
+  const cos3 = productsInCart.indexOf(cos2);
+  console.log(productsInCart);
+  console.log('sssss', cos2);
+
 }
 
 function render(){
   const cart = document.querySelector('.cart');
   let HTML = '';
   for(let productInCart of productsInCart){
-    const generated = `<div>${productInCart.name} ${productInCart.value} <i class="fa-regular fa-trash-can"></i></div>`;
+    const generated = `<div>${productInCart.name} ${productInCart.value} <i class="fa-regular fa-trash-can can-icon"></i></div>`;
     HTML = HTML + generated;
   }
   cart.innerHTML = HTML;
@@ -73,3 +96,4 @@ cartIconListener();
 categoriesAddListener();
 inputsListener();
 render();
+
