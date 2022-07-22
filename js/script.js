@@ -72,13 +72,10 @@ function removeFromCan(event){
   const clickedElement = event.target;
   const cartElement = clickedElement.closest('div');
   const textCartElem = cartElement.textContent;
-  const cos = textCartElem.split(' ');
-  const cos2 = {};
-  cos2.value = cos[1];
-  cos2.name = cos[0];
-  const cos3 = productsInCart.indexOf(cos2);
-  console.log(productsInCart);
-  console.log('sssss', cos2);
+  const productName = textCartElem.split(' ');
+  const productIndex = productsInCart.findIndex(x => x.name === productName);
+  productsInCart.pop(productIndex, 1);
+  render();
 
 }
 
